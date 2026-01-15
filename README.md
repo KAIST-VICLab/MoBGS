@@ -27,7 +27,7 @@ pip install git+https://github.com/nerfstudio-project/gsplat.git@v1.4.0
 pip install -e submodules/simple-knn
 ```
 ## 📁 Data Preparations
-### We follow the evaluation setup from [DyBluRF](https://github.com/huiqiang-sun/DyBluRF). Download our preprocessed dataset [here](https://github.com/KAIST-VICLab/SplineGS/releases/tag/dataset) and arrange them as follows:
+### We follow the evaluation setup from [DyBluRF](https://github.com/huiqiang-sun/DyBluRF). Download our preprocessed dataset [here](https://github.com/KAIST-VICLab/MoBGS/releases/tag/dataset) and arrange them as follows:
 ```bash
 MoBGS/data/stereo
     ├── basketball
