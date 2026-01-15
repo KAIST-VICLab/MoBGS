@@ -1,0 +1,2 @@
+python eval.py -s data/stereo/seesaw/dense/ --port 6018 --expname "seesaw" --configs arguments/stereo/seesaw.py --checkpoint output/seesaw/point_cloud/iteration_10000
+python metrics.py --datadir data/stereo/seesaw/dense/ --scene_name seesaw --output_dir output

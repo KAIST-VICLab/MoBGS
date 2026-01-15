@@ -1,0 +1,1 @@
+python train.py -s data/stereo/seesaw/dense/ --port 6969 --expname "seesaw" --configs arguments/stereo/seesaw.py
