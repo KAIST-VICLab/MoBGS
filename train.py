@@ -379,7 +379,6 @@ def scene_reconstruction(dataset, opt, hyper, pipe, blceopt, testing_iterations,
 
         dmeans_3d_final_list = []
         image_ori_list = []
-        sharp_images = []
 
         labels = []
         centroids = []
@@ -408,7 +407,6 @@ def scene_reconstruction(dataset, opt, hyper, pipe, blceopt, testing_iterations,
                 gt_image = viewpoint_cams[n_batch]['image'].cuda()
 
             gt_images.append(gt_image.unsqueeze(0))
-            sharp_images.append(viewpoint_cams[n_batch].sharp_img_tensor.unsqueeze(0).cuda())
             if viewpoint_cams[n_batch].a_chann is not None:
                 alpha_list.append(viewpoint_cams[n_batch].a_chann[None].cuda())
 
@@ -606,7 +604,6 @@ def scene_reconstruction(dataset, opt, hyper, pipe, blceopt, testing_iterations,
             s_image_tensor = torch.cat(s_images, 0)
             image_tensor = torch.cat(images, 0)
             depth_tensor = torch.cat(depth_list, 0)
-            sharp_image_tensor = torch.cat(sharp_images, 0)
             ori_image_tensor = torch.cat(image_ori_list, 0)
             
             latent_img_final_tensor = torch.cat(latent_img_final_list, dim=0)
