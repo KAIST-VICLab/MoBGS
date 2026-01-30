@@ -64,8 +64,3 @@ If you find our repository useful, please consider giving it a star ⭐ and citi
     year      = {2026},
 }
 ```
-
-
-## 📈 Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=KAIST-VICLab/MoBGS&type=Date)](https://www.star-history.com/#KAIST-VICLab/MoBGS&Date)
